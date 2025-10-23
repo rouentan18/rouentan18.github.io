@@ -1,0 +1,178 @@
+/* --- Global Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Header --- */
+header {
+    background-color: #ffffff; /* White header */
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h1 a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav a {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* --- Main Content Layout (Flexbox) --- */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Mobile-first: stack main and aside */
+    gap: 2rem;
+}
+
+main {
+    flex: 3; /* Takes up 3/4 of the space on desktop */
+}
+
+aside {
+    flex: 1; /* Takes up 1/4 of the space on desktop */
+}
+
+/* --- Blog Posts --- */
+.post {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post h2 a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.post h2 a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-meta {
+    color: #6c757d; /* Medium gray */
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-image {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* --- Sidebar --- */
+.widget {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.widget h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget li {
+    margin-bottom: 10px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+
+/* --- Responsive Design (for tablets and desktops) --- */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* On larger screens, put main and aside side-by-side */
+    }
+}
