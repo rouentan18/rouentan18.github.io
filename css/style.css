@@ -22,7 +22,7 @@ body {
 
 /* Keep content below the fixed header */
 .main-content {
-    padding-top: var(--header-height);
+    padding-top: 1.5rem; /* visual spacing; header no longer overlaps */
     transition: padding-top 200ms;
     display: flex;
     flex-direction: column;
@@ -31,14 +31,20 @@ body {
 
 /* Header: apply to <header class="site-header"> */
 header.site-header {
-    position: fixed;
-    inset: 0 0 auto 0; /* top:0; left/right:0 */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     z-index: 1030;
     background: rgba(22, 27, 34, 0.95);
     color: #fff;
     transition: padding 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
     padding: 18px 0;
     border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Keep a browser-friendly anchor offset so in-page links are not hidden */
+html {
+    scroll-padding-top: calc(var(--header-height, 88px) + 8px);
 }
 
 /* Header inner layout */

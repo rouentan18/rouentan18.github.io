@@ -12,9 +12,11 @@
     </style>
 </head>
 
+
+
 <body>
 
-    <header class="bg-dark text-white py-4 mb-4 site-header">
+    <header class="bg-dark text-white py-4 site-header">
         <div class="container">
             <h1><a href="index.html" class="text-white text-decoration-none">Rou En Travel Diary</a></h1>
             <nav>
@@ -25,6 +27,15 @@
             </nav>
         </div>
     </header>
+
+    <script>
+        // set initial header height so .main-content padding applies immediately
+        (function () {
+            const h = document.querySelector('header.site-header');
+            if (!h) return;
+            document.documentElement.style.setProperty('--header-height', Math.ceil(h.getBoundingClientRect().height) + 'px');
+        })();
+    </script>
 
     <div class="container main-content">
         <main>
