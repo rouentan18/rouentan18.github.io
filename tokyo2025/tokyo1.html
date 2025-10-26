@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Guide to Using Markdown</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tokyo 13/9/2025 - 21/9/2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .post {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .post-content {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        h3 {
+            color: #34495e;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
+    <header class="bg-dark text-white py-4 mb-4">
         <div class="container">
-            <h1><a href="index.html">My Awesome Blog</a></h1>
+            <h1><a href="index.html" class="text-white text-decoration-none">Rou En Travel Diary</a></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                <ul class="list-unstyled d-flex gap-4">
+                    <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="/about.html" class="text-white text-decoration-none">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,51 +52,58 @@
 
     <div class="container main-content">
         <main>
-            <article class="post">
-                
-                <h2>My Guide to Using Markdown</h2>
-                
-                <p class="post-meta">Published on October 23, 2025 by Your Name</p>
-                
-                <img src="https://via.placeholder.com/800x400?text=Markdown+Guide" alt="Markdown logo" class="post-image">
+            <article class="post bg-white p-4 rounded shadow-sm">
+                <h2 class="text-primary mb-3">Tokyo 14/9/2025 - 21/9/2025</h2>
+                <p class="post-meta text-muted mb-4">Published on September 21, 2025 by Rou En</p>
 
-                <p>Markdown is a lightweight markup language with plain-text-formatting syntax. It's a fantastic way to write content for the web. Here are the basics:</p>
-                
-                <h3>Headings</h3>
-                <p>You use pound signs (#) for headings:</p>
-                <pre><code># This is an H1
-## This is an H2
-### This is an H3
-</code></pre>
+                <div class="post-content bg-light p-4 rounded mb-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="/images/tokyo-2025/tokyo-2025-main.jpg" alt="Tokyo"
+                                class="img-fluid rounded mb-3">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">This is my first time went to Tokyo, we get a good deal with Vietnam
+                                Airlines and we stay at Asakusa Tobu Hotel for the whole trip.</p>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Text Styling</h3>
-                <p>You can make text <strong>**bold**</strong> by using two asterisks, or <em>*italic*</em> by using one asterisk.</p>
+                <h3 class="text-secondary mb-3">1st Day (14/09/2025)</h3>
+                <p>We depart yesterday from Kuala Lumpur, KLIA 1 airport (19:25) to Ho Chi Minh, Tan Son Nhat
+                    International Airport (SGN) (20:35) for transit. Then fly from Ho Chi Minh (00:25) and reached Tokyo
+                    Narita airport (08:00) </p>
+                <p>After we arrive at Narita airport, we buy the "Welcome Suica" IC card using the machine. Then collect
+                    the Tokyo Metro Pass using the machine as well. </p>
+                <p>Our planning is to take the Keisei Narita Skyaccess from the airport to Asakusa, which are chaper and
+                    directly reach Asakusa. But we went to the wrong train, which heading to Ueno, luckily Ueno is
+                    consider quite near and convenient to reach Asakusa by train. We arrived at the Asakusa Tobu hotel
+                    around 10:30 am, we are lucky that staff offered us to have early check-in, feel refreshing after a
+                    shower especially after traveling for long hours.</p>
 
-                <h3>Lists</h3>
-                <p>Creating lists is easy:</p>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3 (sub-item)</li>
-                </ul>
+                <p>Lunch we eat tonkatsu in asakusa</p>
 
-                <blockquote>
-                  This is a blockquote. It's great for pulling out a key quote or message in your post.
-                </blockquote>
+                <p>Then we take train to Ueno again, we plan our first day attractions focus at here.</p>
 
-                <p>That's it! It's a simple and powerful way to write.</p>
 
-                <hr>
-                <a href="index.html" class="read-more" style="background-color: #6c757d;">&larr; Back to All Posts</a>
+                <ol class="list-group list-group-numbered mb-4">
+                    <li class="list-group-item">Ueno Zoo</li>
+                    <li>National Museum of Nature and Science</li>
+                    <li>Ameya-Yokocho Market</li>
+                </ol>
 
+                <hr class="my-4">
+                <a href="index.html" class="btn btn-secondary">&larr; Back to All Posts</a>
             </article>
         </main>
-        
-        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 Rou En Travel Diary. All rights reserved.</p>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
