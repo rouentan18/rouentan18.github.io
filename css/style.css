@@ -249,5 +249,11 @@ footer {
     margin-bottom: 0.5rem;
 }
 
+/* lightbox helpers */
+img.lightbox { cursor: zoom-in; }
+#lightboxImage { max-height: 80vh; object-fit: contain; display: block; }
+/* ensure modal backdrop content remains dark for visibility */
+.modal-backdrop.show { opacity: 0.6; }
+
 
 /* End of stylesheet */
